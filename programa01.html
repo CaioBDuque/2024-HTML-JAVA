@@ -7,9 +7,13 @@
 </head>
 <body>
     <script>
-
         function pulaLinha() {
             document.write('<br>')
+        }
+
+        function mostrar(texto){
+            document.write(texto)
+            pulaLinha()
         }
 
         let ano = 2024
@@ -17,23 +21,20 @@
         const maeIdade = ano - 1985
         const paiIdade = ano - 1978
 
-        document.write(`Oi, meu nome é Caio e tenho ${minhaIdade} anos` )
-        pulaLinha()
-        document.write(`O nome da minha Mãe é Noelya e ela tem ${maeIdade} anos`)
-        pulaLinha()
-        document.write(`O nome do meu Pai é Israel e ele tem ${paiIdade} anos`)
+        mostrar(`Oi, meu nome é Caio e tenho ${minhaIdade} anos` )
+        mostrar(`O nome da minha Mãe é Noelya e ela tem ${maeIdade} anos`)
+        mostrar(`O nome do meu Pai é Israel e ele tem ${paiIdade} anos`)
         pulaLinha()
 
         let media = (minhaIdade + maeIdade + paiIdade )/3
-        document.write(` A media das idades da minha familia é : ${media} <br><br>`)
+        mostrar(` A media das idades da minha familia é : ${media}`)
 
         ano = 2030
 
-        document.write(' Em 2030 minha familia terá: ' + '<br><br>')
-        document.write(`Em ${ano} eu terei ${ano - 2008} anos <br>`)
-        document.write(`Minha mãe terá ${ano - 1985} anos <br>`)
-        document.write(`Meu pai terá ${ano - 1978} anos <br>`)
-
+        mostrar(' Em 2030 minha familia terá: ')
+        mostrar(`Em ${ano} eu terei ${ano - 2008} anos `)
+        mostrar(`Minha mãe terá ${ano - 1985} anos `)
+        mostrar(`Meu pai terá ${ano - 1978} anos `)
 
     </script>
 </body>
