@@ -16,6 +16,24 @@
             document.write(texto)
             pulaLinha()
         }
+
+        const medailhaOuro = propt(`Quantas pontos voce recebeu`)
+        const medalhaPrata = propt(`Quantas pontos voce recebeu`)
+        const medalhaBronze = propt(`Quantas pontos voce recebeu`)
+        const quantidadePontos = (`Quantos pontos voce fez`)
+
+        let pontos = (medalhaOuro * 5) + (medalhaPrata * 3) + (medalhaBronze * 2) + perseInt(quantidadePontos)
+
+        if(pontos > 30){
+            mostrar(`Você venceu a competição de comer hambúrguers! Pegue seu troféu e vale de R$200.00`)
+        } else if(pontos == 30){
+            mostrar(`Você ficou em segundo lugar na competição de comer hambúrguers! Pegue seu vale de R$ 30.00`)
+        } else if(pontos < 30 && pontos > 25){
+            mostrar(`Você ficou em terceiro lugar na competição de comer hamburguers! Pegue seu vale de R$ 15.00`)
+        } else if(pontos < 25){
+            mostrar(`Não foi dessa vez :-( pegue o primio de consolação, uma coxinha com coldo de cana :-) Tente na próxima`)
+        }
+        mostrar(`O total de pontos que você fez na competição foi de: ${pontos}`)
     </script> 
 </body>
 </html>
