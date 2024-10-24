@@ -18,10 +18,9 @@
 body{
     background-color: var(--azul-clarinho);
     font-family: var(--font-texto);
-    padding: 2em;
-    color: var(--font-texto01):
+    color: var(--font-texto01);
 }
-header{
+header, footer{
     background-color: var(--azul-claro);
     text-align: center;
     padding: 2em;
@@ -36,5 +35,31 @@ header h1{
 .projetos{
     padding: 2em;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.cortao{
+    text-align: center;
+    background-color: var(--vermelho);
+    width: 100%;
+    margin: 1em 0;
+    color: var(--azul);
+    padding: 1em 0;
+    border-radius: 10px;
+}
+
+.cortao:hover{
+    background-color: var(--azul-claro);
+}
+
+.cortao a{
+    text-decoration: none;
+    color: var(--bege);
+
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--vermelho);
 }
